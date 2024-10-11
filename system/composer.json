@@ -1,0 +1,32 @@
+{
+    "name": "vendor/vendor",
+    "type": "twig",
+    "require": {
+        "twig/twig": "^3.4",
+        "phpmailer/phpmailer": "^6.7"
+    },
+    "autoload": {
+        "files": [
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Config/config.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Config/form.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Traits/call.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Traits/constructor.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Traits/load.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/App/api.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/App/app.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Data/data.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Database/db.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/MVC/controller.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Requests/mail.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/MVC/model.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Requests/request.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Requests/route.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Data/secure.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Requests/session.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Data/log.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/MVC/template.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Requests/url.php",
+            "AppMVCSandrielArgentim/AppMVC/MVC/Classes/Requests/user.php"
+        ]
+    }
+}
