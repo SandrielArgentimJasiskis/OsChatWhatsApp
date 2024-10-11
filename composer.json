@@ -1,0 +1,14 @@
+{
+    "name": "vendor/vendor",
+    "type": "twig",
+    "require": {
+        "twig/twig": "^3.4",
+        "cboden/ratchet": "^0.4.1",
+        "phpmailer/phpmailer": "^6.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "MauticPlugin\\": "plugins/"
+        }
+    }
+}
