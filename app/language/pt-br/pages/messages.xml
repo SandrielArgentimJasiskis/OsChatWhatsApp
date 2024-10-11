@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_button_add>&lt;i class="fa fa-plus"&gt;&lt;/i&gt; Adicionar nova</text_button_add>
+        <text_th_message>Mensagem</text_th_message>
+        <text_th_type>Tipo</text_th_type>
+        <text_th_option_title>Título da Opção</text_th_option_title>
+        <text_th_option_description>Descrição da Opção</text_th_option_description>
+        <text_th_option_sort_order>Ordem de exibição</text_th_option_sort_order>
+        <text_th_message_title>Mensagem</text_th_message_title>
+        <text_th_message_option_title>Opção</text_th_message_option_title>
+        <text_th_message_option_sort_order>Exibição</text_th_message_option_sort_order>
+        <text_disabled>Desabilitado</text_disabled>
+        <text_enabled>Habilitado</text_enabled>
+        <text_title_add>Insira as informações abaixo para cadastrar uma nova mensagem</text_title_add>
+        <text_title_edit>Insira as informações abaixo para atualizar uma mensagem existente</text_title_edit>
+        <text_message_type_text>Texto</text_message_type_text>
+        <text_message_type_image>Imagem</text_message_type_image>
+        <text_message_type_interactive>Menu</text_message_type_interactive>
+        <text_message_type_media>Mídia</text_message_type_media>
+        <text_message_type_template>Template</text_message_type_template>
+        <text_placeholder_message_title>Informe o Título da Mensagem (Utilizado Apenas Para Identificação)</text_placeholder_message_title>
+        <text_placeholder_message_media_url>URL/Link da mídia da mensagem </text_placeholder_message_media_url>
+        <text_option_select_attendant_id>--- Atendente ---</text_option_select_attendant_id>
+        <text_option_select_send_to>--- Enviar/Responder Para ---</text_option_select_send_to>
+        <text_option_select_send_to_customer>Para o cliente</text_option_select_send_to_customer>
+        <text_option_select_send_to_attendant>Para Outro Número (Setor Responsável)</text_option_select_send_to_attendant>
+        <text_option_select_action_finish_conversation>--- Finalizar a conversa ---</text_option_select_action_finish_conversation>
+        <text_option_select_message_type>--- Tipo de Mensagem ---</text_option_select_message_type>
+        <text_option_select_event>--- Evento ---</text_option_select_event>
+        <text_option_select_event_message_response>Ao Cliente Responder Outra Mensagem</text_option_select_event_message_response>
+        <text_option_select_event_message_started_by_attendant>Ao Atendente Iniciar a Conversa</text_option_select_event_message_started_by_attendant>
+        <text_option_select_event_message_finished_by_attendant>Ao Atendente Finalizar a Conversa</text_option_select_event_message_finished_by_attendant>
+        <text_option_select_event_message_finished_by_customer>Ao Cliente Finalizar a Conversa</text_option_select_event_message_finished_by_customer>
+        <text_option_select_event_timeout>Ao tempo de conversa encerrar.</text_option_select_event_timeout>
+        <text_option_select_message_status>--- Status ---</text_option_select_message_status>
+        <text_option_select_message>--- Mensagem ---</text_option_select_message>
+        <text_option_select_message_option>--- Opção da Mensagem ---</text_option_select_message_option>
+        <text_option_message_type_text>Texto</text_option_message_type_text>
+        <text_option_message_type_interactive>Menu</text_option_message_type_interactive>
+        <text_option_message_type_media>Mídia</text_option_message_type_media>
+        <text_option_message_type_template>Template</text_option_message_type_template>
+        <text_option_select_message_type_media>--- Tipo de Mensagem de Mídia ---</text_option_select_message_type_media>
+        <text_option_message_media_type_image>Imagem</text_option_message_media_type_image>
+        <text_option_message_media_type_video>Vídeo </text_option_message_media_type_video>
+        <text_option_message_media_type_audio>Áudio </text_option_message_media_type_audio>
+        <text_option_message_media_type_document>Documento</text_option_message_media_type_document>
+        <text_option_select_message_template>--- Selecione o Template Para Envio ---</text_option_select_message_template>
+        <text_message_template_content>Conteúdo do Template</text_message_template_content>
+        <text_title_keyword>Palavras-chave (Separadas por ",")</text_title_keyword>
+        <text_placeholder_keyword>Palavras-chave (Separadas por ",")</text_placeholder_keyword>
+        <text_title_message_content>Conteúdo da Mensagem</text_title_message_content>
+        <text_label_send_init>Mensagem Inicial</text_label_send_init>
+        <text_label_send_self>Enviar a Mesma Mensagem Que Foi Recebida</text_label_send_self>
+        <text_placeholder_send_message>Sua Mensagem Aqui...</text_placeholder_send_message>
+        <text_question_delete>Você têm certeza de que deseja deletar a mensagem \'%s\'?</text_question_delete>
+        <text_button_submit_add>Cadastrar</text_button_submit_add>
+        <text_button_submit_edit>Atualizar</text_button_submit_edit>
+        <text_msg_success_add>Mensagem cadastrada com sucesso.</text_msg_success_add>
+        <text_msg_success_edit>Mensagem atualizada com sucesso.</text_msg_success_edit>
+        <text_msg_success_delete>Mensagem deletada com sucesso.</text_msg_success_delete>
+        <text_empty>Você ainda não cadastrou nenhuma mensagem para ser enviada.</text_empty>
+    </translations>

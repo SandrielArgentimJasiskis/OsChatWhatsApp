@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_dashboard>Dashboard</text_dashboard>
+        <text_messages>Mensagens</text_messages>
+		<text_attendants>Atendentes</text_attendants>
+        <text_users>Usuários</text_users>
+        <text_reports>Relatórios</text_reports>
+        <text_extensions>Extensões</text_extensions>
+        <text_schedules>Agendamentos</text_schedules>
+        <text_settings>Configurações</text_settings>
+		<text_system>Sistema</text_system>
+        <text_logout>Sair</text_logout>
+    </translations>

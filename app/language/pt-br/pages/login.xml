@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_welcome>Olá, seja bem-vindo! Faça login para continuar.</text_welcome>
+        <text_username>Informe o nome de usuário</text_username>
+        <text_password>Informe a senha</text_password>
+        <text_captcha>Insira o texto do captcha</text_captcha>
+        <text_submit>Entrar</text_submit>
+        <text_forgotten>Esqueci a senha</text_forgotten>
+    </translations>

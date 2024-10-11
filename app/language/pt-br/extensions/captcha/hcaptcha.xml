@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>hCaptcha</text_title>
+        <text_site_key>Chave do Site</text_site_key>
+        <text_secret_key>Chave Secreta</text_secret_key>
+    </translations>

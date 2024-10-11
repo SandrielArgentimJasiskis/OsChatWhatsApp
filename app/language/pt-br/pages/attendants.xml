@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_button_add>&lt;i class="fa fa-plus"&gt;&lt;/i&gt; Adicionar novo</text_button_add>
+        <text_th_attendant>Atendente</text_th_attendant>
+        <text_th_phone>Número</text_th_phone>
+        <text_title_add>Insira as informações abaixo para cadastrar um novo atendente</text_title_add>
+        <text_title_edit>Insira as informações abaixo para atualizar um atendente existente</text_title_edit>
+        <text_placeholder_attendant_name>Informe o Nome do Atendente</text_placeholder_attendant_name>
+        <text_placeholder_attendant_phone_number>Informe o Número de Telefone do Atendente</text_placeholder_attendant_phone_number>
+        <text_question_delete>Você têm certeza de que deseja deletar o atendente \'%s\'?</text_question_delete>
+        <text_button_submit_add>Cadastrar</text_button_submit_add>
+        <text_button_submit_edit>Atualizar</text_button_submit_edit>
+        <text_msg_success_add>Atendente cadastrado com sucesso.</text_msg_success_add>
+        <text_msg_success_edit>Atendente atualizado com sucesso.</text_msg_success_edit>
+        <text_msg_success_delete>Atendente deletado com sucesso.</text_msg_success_delete>
+        <text_empty>Você ainda não cadastrou nenhum atendente.</text_empty>
+    </translations>

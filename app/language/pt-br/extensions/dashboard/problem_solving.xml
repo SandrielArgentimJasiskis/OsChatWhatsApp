@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Resolução de Problemas</text_title>
+		<text_bot>Automático</text_bot>
+        <text_attendant>Humano</text_attendant>
+    </translations>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Insira as informações abaixo para recuperar sua senha</text_title>
+        <text_placeholder_email>Informe o endereço de e-mail do usuário</text_placeholder_email>
+        <text_submit>&lt;i class="fa fa-mail"&gt;&lt;/i&gt; Enviar código de recuperação</text_submit>
+        <text_back>Voltar</text_back>
+        <text_mail_subject>Solicitação de recuperação de senha solicitada</text_mail_subject>
+        <text_mail_body>&lt;html dir="ltr" lang="pt-br"&gt;
+		  &lt;head&gt;
+		&lt;title&gt;%s&lt;/title&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&lt;
+		&lt;/head&gt;
+		&lt;body&gt;Clique nesse link para recuperar a sua senha: &lt;a href="%s" target="_blank"&gt;%s&lt;a&gt;&lt;/body&gt;</text_mail_body>
+        <text_mail_alt_body>Copie e cole este código para recuperar a sua senha: %s</text_mail_alt_body>
+        <text_msg_success_sent>O e-mail de recuperação foi enviado para o e-mail informado.</text_msg_success_sent>
+    </translations>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Últimas Mensagens de Mídia Enviadas</text_title>
+		<text_customer>Cliente</text_customer>
+        <text_type>Tipo de Mídia</text_type>
+        <text_url>Link</text_url>
+        <text_time>Horário</text_time>
+        <text_message_type_media_image>Imagem</text_message_type_media_image>
+        <text_message_type_media_video>Vídeo</text_message_type_media_video>
+        <text_message_type_media_audio>Aúdio</text_message_type_media_audio>
+        <text_message_type_media_document>Documento</text_message_type_media_document>
+        <text_limit>Limite de Exibição</text_limit>
+    </translations>

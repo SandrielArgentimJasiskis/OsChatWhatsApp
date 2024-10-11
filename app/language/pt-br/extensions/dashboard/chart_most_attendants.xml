@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Gráfico de Atendentes Mais Ativos</text_title>
+        <text_most_attendant_color>Cor dos atendentes mais ativos</text_most_attendant_color>
+        <text_most_attendant_bgcolor>Cor de fundo do gráfico</text_most_attendant_bgcolor>
+        <text_fill>--- Preencher o fundo dos dados? ---</text_fill>
+    </translations>

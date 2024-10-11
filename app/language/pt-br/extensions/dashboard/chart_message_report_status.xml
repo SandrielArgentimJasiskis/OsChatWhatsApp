@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Gráfico de Status das Mensagens</text_title>
+        <text_message_sent_color>Cor das Mensagens Enviadas</text_message_sent_color>
+        <text_message_read_color>Cor das Mensagens Lidas</text_message_read_color>
+        <text_type>--- Tipo de Gráfico ---</text_type>
+        <text_chart_type>Tipo de gráfico</text_chart_type>
+        <text_type_1>Gráfico de Pizza</text_type_1>
+        <text_type_2>Gráfico de Rosquinha</text_type_2>
+		<text_message_sent>Mensagens enviadas</text_message_sent>
+        <text_message_read>Mensagens lidas</text_message_read>
+    </translations>

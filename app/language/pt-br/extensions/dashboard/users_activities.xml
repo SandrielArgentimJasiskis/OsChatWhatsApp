@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Atividades Mais Recentes por Usuário </text_title>
+        <text_limit>Limite de Exibição</text_limit>
+        <text_login>%s fez login</text_login>
+        <text_logout>%s saiu de sua conta</text_logout>
+        <text_page_view>%s visitou &lt;a href="%s"&gt;%s&lt;/a&gt;</text_page_view>
+        <text_activity>Atividade</text_activity>
+        <text_time>Horário</text_time>
+    </translations>

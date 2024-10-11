@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Agendamentos em Massa</text_title>
+        <text_th_id>ID</text_th_id>
+        <text_th_schedule>Template</text_th_schedule>
+        <text_th_customer_number>Número</text_th_customer_number>
+        <text_th_status>Status</text_th_status>
+        <text_th_status_content>Motivo</text_th_status_content>
+        <text_th_date>Horário Programado</text_th_date>
+        <text_status_failed>Falha</text_status_failed>
+        <text_status_success>Sucesso</text_status_success>
+        <text_status_wait>Aguardando</text_status_wait>
+        <text_status_processing>Disparando</text_status_processing>
+        <text_status_paused>Pausado</text_status_paused>
+        <text_status_unpaused>Despausado</text_status_unpaused>
+        <text_status_cancelled>Cancelado</text_status_cancelled>
+        <text_status_finished>Finalizado</text_status_finished>
+    </translations>

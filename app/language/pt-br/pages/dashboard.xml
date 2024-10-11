@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_yesterday>ONTEM</text_yesterday>
+        <text_day>HOJE</text_day>
+        <text_week>SEMANAL</text_week>
+        <text_month>MENSAL</text_month>
+        <text_year>ANUAL</text_year>
+        <text_empty>Nenhuma mensagem foi enviada e recebida.</text_empty>
+    </translations>

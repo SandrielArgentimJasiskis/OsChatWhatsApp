@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Gráfico de Tipos de Mensagem Mais Enviadas</text_title>
+        <text_data_color>Cor dos dados do gráfico</text_data_color>
+        <text_bgcolor>Cor de fundo do gráfico</text_bgcolor>
+        <text_fill>--- Preencher o fundo dos dados? ---</text_fill>
+        <text_message_type_text>Texto</text_message_type_text>
+        <text_message_type_interactive>Menu</text_message_type_interactive>
+        <text_message_type_media>Mídia</text_message_type_media>
+    </translations>

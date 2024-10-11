@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Palavras-chave Mais Recentes</text_title>
+        <text_limit>Limite de Exibição</text_limit>
+        <text_keyword>Palavra-chave</text_keyword>
+        <text_customer>Cliente</text_customer>
+        <text_time>Horário</text_time>
+    </translations>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Padrão</text_title>
+        <text_bg_color>Cor de Fundo</text_bg_color>
+        <text_buttons_bg_color>Cor de Fundo dos Botões</text_buttons_bg_color>
+        <text_buttons_disabled_bg_color>Cor de Fundo dos Botões Desabilitados </text_buttons_disabled_bg_color>
+        <text_extensions_title_bg_color>Cor de Fundo dos Títulos das Extensões</text_extensions_title_bg_color>
+        <text_extensions_title_color>Cor da Fonte dos Títulos das Extensões</text_extensions_title_color>
+        <text_extensions_title_align>--- Alinhamento dos Títulos das Extensões ---</text_extensions_title_align>
+        <text_align_left>Esquerda</text_align_left>
+        <text_align_center>Centralizado</text_align_center>
+        <text_align_right>Direita</text_align_right>
+        <text_extensions_title_weight>--- Estilo da Fonte dos Títulos das Extensões ---</text_extensions_title_weight>
+        <text_weight_none>Padrão</text_weight_none>
+        <text_weight_bold>Negrito</text_weight_bold>
+        <text_option_select_font>--- Fonte do Tema ---</text_option_select_font>
+    </translations>

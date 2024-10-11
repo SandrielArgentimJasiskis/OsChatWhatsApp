@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Status das Mensagens</text_title>
+		<text_message_sent>Mensagens enviadas</text_message_sent>
+        <text_message_read>Mensagens lidas</text_message_read>
+    </translations>

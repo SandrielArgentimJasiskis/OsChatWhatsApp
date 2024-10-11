@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_button_add>&lt;i class="fa fa-plus"&gt;&lt;/i&gt; Adicionar novo</text_button_add>
+        <text_th_user>Usuário</text_th_user>
+        <text_th_username>Nome de Usuário</text_th_username>
+        <text_title_add>Insira as informações abaixo para cadastrar um novo usuário</text_title_add>
+        <text_title_edit>Insira as informações abaixo para atualizar um usuário existente</text_title_edit>
+        <text_placeholder_username>Informe o nome de usuário</text_placeholder_username>
+        <text_placeholder_fullname>Informe o nome completo</text_placeholder_fullname>
+        <text_placeholder_app_id>ID do aplicativo</text_placeholder_app_id>
+        <text_placeholder_whatsapp_business_account_id>ID da conta do WhatsApp Business</text_placeholder_whatsapp_business_account_id>
+        <text_option_select_phone>--- Número de Telefone Celular Principal ---</text_option_select_phone>
+        <text_placeholder_token>Informe o token de acesso da API</text_placeholder_token>
+        <text_placeholder_pass>Informe a nova senha</text_placeholder_pass>
+		<text_placeholder_confirm>Informe a nova senha novamente</text_placeholder_confirm>
+		<text_placeholder_limit_attendants>Limite máximo de atendentes para este usuário</text_placeholder_limit_attendants>
+		<text_placeholder_limit_messages>Limite máximo de mensagens para este usuário</text_placeholder_limit_messages>
+        <text_question_delete>Você têm certeza de que deseja deletar o usuário \'%s\'?</text_question_delete>
+        <text_button_submit_add>Cadastrar</text_button_submit_add>
+        <text_button_submit_edit>Atualizar</text_button_submit_edit>
+		<text_title_permission_access>Permissões de Acesso:</text_title_permission_access>
+		<text_title_limitations>Limitações</text_title_limitations>
+		<text_title_permission_modify>Permissões de Modificação</text_title_permission_modify>
+        <text_msg_success_add>Usuário cadastrado com sucesso.</text_msg_success_add>
+        <text_msg_success_edit>Usuário atualizado com sucesso.</text_msg_success_edit>
+        <text_msg_success_delete>Usuário deletado com sucesso.</text_msg_success_delete>
+    </translations>

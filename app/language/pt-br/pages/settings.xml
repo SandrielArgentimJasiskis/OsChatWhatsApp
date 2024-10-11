@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Atualize as configurações da integração com o WhatsApp</text_title>
+        <text_placeholder_app_id>ID do aplicativo</text_placeholder_app_id>
+        <text_placeholder_whatsapp_business_account_id>ID da conta do WhatsApp Business</text_placeholder_whatsapp_business_account_id>
+        <text_option_select_phone>--- Número de Telefone Celular Principal ---</text_option_select_phone>
+        <text_placeholder_token>Informe o token de acesso da API</text_placeholder_token>
+        <text_button_submit>Atualizar</text_button_submit>
+        <text_msg_success>Configurações atualizadas com sucesso.</text_msg_success>
+    </translations>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_message_text_init>Clique no botão abaixo para iniciar a conversa com o cliente *%s*</text_message_text_init>
+        <text_message_button_init>INICIAR CONVERSA</text_message_button_init>
+        <text_message_text_finish>Clique no botão abaixo para finalizar a conversa com o cliente *%s*</text_message_text_finish>
+        <text_message_button_finish>FINALIZAR CONVERSA</text_message_button_finish>
+        <text_message_hello_by_attendant>Olá, me chamo *%s* e irei atendê-lo. Como posso ajudá-lo?</text_message_hello_by_attendant>
+        <text_message_please_select_a_customer>Por favor, selecione com qual cliente deseja conversar...</text_message_please_select_a_customer>
+        <text_message_please_wait>Por favor, aguarde. Você é o próximo na fila de espera.</text_message_please_wait>
+        <text_thank_you_for_wait>Obrigado por aguardar. Vamos dar prosseguimento ao seu atendimento.</text_thank_you_for_wait>
+        <text_message_conversation_finished_by_attendant>A conversa foi finalizada pelo atendente, volte sempre.</text_message_conversation_finished_by_attendant>
+        <text_message_didnt_understand>Desculpe, não consegui entender. Você poderia repetir?</text_message_didnt_understand>
+        <text_message_select_an_option>Por favor, selecione uma das opções do menu acima</text_message_select_an_option>
+        <text_message_select_next_to>Selecione com qual cliente deseja conversar</text_message_select_next_to>
+        <text_message_sendded_by_customer>Enviado por *%s*
+        
+</text_message_sendded_by_customer>
+        <text_error_message_long>*OPS, O CONTEÚDO DA MENSAGEM É MUITO GRANDE. PARA DAR PROSSEGUIMENTO AO SEU ATENDIMENTO, POR FAVOR, ENVIE UMA MENSAGEM MAIS CURTA!*</text_error_message_long>
+        <text_error_conversation_init>*OPS, A CONVERSA COM ESTE CLIENTE JÁ FOI FINALIZADA!*</text_error_conversation_init>
+        <text_error_conversation_started>*OPS, PARECE QUE UM ATENDENTE JÁ ESTÁ TE AUXILIANDO.*</text_error_conversation_started>
+        <text_error_conversation_finish>*OPS, A CONVERSA COM ESTE CLIENTE JÁ FOI FINALIZADA!*</text_error_conversation_finish>
+        <text_error_attendant_init_conversation>*Por favor, é preciso iniciar conversa com pelo menos um cliente!*</text_error_attendant_init_conversation>
+    </translations>

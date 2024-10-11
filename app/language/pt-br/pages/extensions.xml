@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_type_captcha>CAPTCHA</text_type_captcha>
+        <text_type_dashboard>DASHBOARD</text_type_dashboard>
+        <text_type_installers>INSTALADORES</text_type_installers>
+        <text_type_integrations>INTEGRAÇÕES</text_type_integrations>
+        <text_type_login>LOGIN</text_type_login>
+        <text_type_reports>RELATÓRIOS</text_type_reports>
+        <text_type_cron>TRABALHOS CRON</text_type_cron>
+        <text_type_themes>TEMAS</text_type_themes>
+        <text_save>Salvar</text_save>
+        <text_close>&#60;i class="fa fa-times" aria-hidden="true"&#62;&#60;/i&#62;</text_close>
+        <text_status>--- Status da extensão--- </text_status>
+        <text_disabled>Desabilitado</text_disabled>
+        <text_enabled>Habilitado</text_enabled>
+        <text_title_extension>Título da extensão </text_title_extension>
+        <text_th_extension>Extensão</text_th_extension>
+        <text_success>Configurações atualizadas com sucesso!</text_success>
+        <text_order_extension>Ordem de Exibição</text_order_extension>
+        <text_empty_list>Nenhuma extensão instalada.</text_empty_list>
+        <text_empty_data>Não há dados para serem exibidos.</text_empty_data>
+    </translations>

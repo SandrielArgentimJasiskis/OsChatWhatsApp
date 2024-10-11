@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Tipos de Mensagem Mais Enviadas</text_title>
+        <text_message_type_text>Texto</text_message_type_text>
+        <text_message_type_interactive>Menu</text_message_type_interactive>
+        <text_message_type_media>Mídia</text_message_type_media>
+    </translations>

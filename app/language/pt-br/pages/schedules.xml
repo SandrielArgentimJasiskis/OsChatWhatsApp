@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_button_add>&lt;i class="fa fa-plus"&gt;&lt;/i&gt; Adicionar novo</text_button_add>
+        <text_th_id>ID</text_th_id>
+        <text_th_schedule>Template</text_th_schedule>
+        <text_th_status>Status</text_th_status>
+        <text_th_date>Horário Programado</text_th_date>
+        <text_option_select_status>--- Status ---</text_option_select_status>
+        <text_disabled>Desabilitado</text_disabled>
+        <text_enabled>Habilitado</text_enabled>
+        <text_option_select_message_template>--- Selecione o Template Para Envio ---</text_option_select_message_template>
+        <text_option_select_phone>--- Número de Telefone Celular Principal ---</text_option_select_phone>
+        <text_title_add>Insira as informações abaixo para agendar um novo agendamento</text_title_add>
+        <text_title_edit>Insira as informações abaixo para atualizar um agendamento existente</text_title_edit>
+        <text_download>&lt;i class="fa fa-download"&gt;&lt;/i&gt; Baixar arquivo</text_download>
+        <text_placeholder_message_title>Informe o Título do Agendamento (Utilizado Apenas Para Identificação)</text_placeholder_message_title>
+        <text_status_wait>Aguardando</text_status_wait>
+        <text_status_processing>Disparando</text_status_processing>
+        <text_status_paused>Pausado</text_status_paused>
+        <text_status_unpaused>Despausado</text_status_unpaused>
+        <text_status_cancelled>Cancelado</text_status_cancelled>
+        <text_status_finished>Finalizado</text_status_finished>
+        <text_question_cancel>Você têm certeza de que deseja cancelar o agendamento \'%s\'?</text_question_cancel>
+        <text_button_submit_add>Agendar</text_button_submit_add>
+        <text_button_submit_edit>Atualizar</text_button_submit_edit>
+        <text_msg_success_add>Agendamento agendado com sucesso.</text_msg_success_add>
+        <text_msg_success_edit>Agendamento atualizado com sucesso.</text_msg_success_edit>
+        <text_msg_success_pause>Agendamento pausado com sucesso.</text_msg_success_pause>
+        <text_msg_success_play>Agendamento despausado com sucesso.</text_msg_success_play>
+        <text_msg_success_cancel>Agendamento cancelado com sucesso.</text_msg_success_cancel>
+        <text_empty>Você ainda não agendou nenhum agendamento em massa para ser enviado.</text_empty>
+    </translations>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Gráfico de Resolução de Problemas</text_title>
+        <text_bot_color>Cor dos Problemas Solucionados Pelo Bot</text_bot_color>
+        <text_attendant_color>Cor dos Problemas Solucionados Por Atendante</text_attendant_color>
+        <text_type>--- Tipo de Gráfico ---</text_type>
+        <text_chart_type>Tipo de gráfico</text_chart_type>
+        <text_type_1>Gráfico de Pizza</text_type_1>
+        <text_type_2>Gráfico de Rosquinha</text_type_2>
+		<text_bot>Automático</text_bot>
+        <text_attendant>Humano</text_attendant>
+    </translations>

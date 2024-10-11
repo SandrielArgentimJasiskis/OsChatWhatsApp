@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Atualize as configurações do sistema</text_title>
+        <text_option_select_default_language>--- Idioma padrão ---</text_option_select_default_language>
+        <text_option_select_default_theme>--- Tema padrão ---</text_option_select_default_theme>
+        <text_option_select_mail_encryption>--- Criptografia SMTP ---</text_option_select_mail_encryption>
+        <text_placeholder_conversation_duration>Duração máxima da conversa sem interação</text_placeholder_conversation_duration>
+        <text_placeholder_api_domain>Domínio da API da Meta</text_placeholder_api_domain>
+        <text_placeholder_api_version>Versão da API da Meta</text_placeholder_api_version>
+        <text_placeholder_cron_token>Token do Cron</text_placeholder_cron_token>
+        <text_placeholder_mail_host>Servidor SMTP</text_placeholder_mail_host>
+        <text_placeholder_mail_username>Usuário SMTP</text_placeholder_mail_username>
+        <text_placeholder_mail_password>Senha SMTP</text_placeholder_mail_password>
+        <text_placeholder_mail_port>Porta SMTP</text_placeholder_mail_port>
+        <text_option_select_mail_tls>TLS</text_option_select_mail_tls>
+        <text_option_select_mail_ssl>SSL</text_option_select_mail_ssl>
+        <text_msg_success>Configurações do sistema atualizadas com sucesso.</text_msg_success>
+        <text_button_submit>Atualizar</text_button_submit>
+    </translations>

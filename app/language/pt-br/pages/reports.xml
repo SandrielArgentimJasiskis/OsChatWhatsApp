@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_reports>Relatórios</text_reports>
+        <text_button_export>&lt;i class="fa fa-download"&gt;&lt;/i&gt; Exportar Dados</text_button_export>
+        <text_empty_data>Não há dados para serem exibidos.</text_empty_data>
+    </translations>

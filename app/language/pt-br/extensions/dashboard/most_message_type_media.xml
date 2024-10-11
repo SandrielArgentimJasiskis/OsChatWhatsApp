@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Tipos de Mensagem de Mídia Mais Enviadas</text_title>
+        <text_message_type_media_image>Imagem</text_message_type_media_image>
+        <text_message_type_media_video>Vídeo</text_message_type_media_video>
+        <text_message_type_media_audio>Aúdio</text_message_type_media_audio>
+        <text_message_type_media_document>Documento</text_message_type_media_document>
+    </translations>

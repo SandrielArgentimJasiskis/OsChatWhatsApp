@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_title>Gráfico de Mensagens</text_title>
+        <text_message_sent_color>Cor das Mensagens Enviadas</text_message_sent_color>
+        <text_message_read_color>Cor das Mensagens Lidas</text_message_read_color>
+		<text_message_sent>Mensagens enviadas</text_message_sent>
+        <text_message_read>Mensagens lidas</text_message_read>
+        <text_message_color>Cor de fundo do gráfico</text_message_color>
+        <text_fill>--- Preencher o fundo dos dados? ---</text_fill>
+		<text_monday>Segunda-feira</text_monday>
+        <text_tuesday>Terça-feira</text_tuesday>
+        <text_wednesday>Quarta-feira</text_wednesday>
+        <text_thursday>Quinta-feira</text_thursday>
+        <text_friday>Sexta-feira</text_friday>
+        <text_saturday>Sábado</text_saturday>
+        <text_sunday>Domingo</text_sunday>
+    </translations>
