@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <translations>
+        <text_error_all_fields_format>Verifique todos os campos.</text_error_all_fields_format>
+        <text_error_extension_type_status_exists>Ops, já há uma extensão deste tipo habilitada. Desabilite-a e tente novamente.</text_error_extension_type_status_exists>
+        <text_error_app_id_format>O ID do aplicativo da Meta é inválido.</text_error_app_id_format>
+        <text_error_whatsapp_business_account_id_format>O ID da conta do WhatsApp Business não é válido.</text_error_whatsapp_business_account_id_format>
+        <text_error_cron_token_format>O token de acesso do cron deve ter pelo menos 100 caracteres.</text_error_cron_token_format>
+        <text_error_phone_format>O número de telefone celular está incorreto.</text_error_phone_format>
+        <text_error_token_format>O token de acesso deve ter pelo menos 100 caracteres.</text_error_token_format>
+        <text_error_login>Os dados de acesso não são válidos.</text_error_login>
+        <text_error_attendant_name_format>O nome do atendente deve ter entre 3 e 64 caracteres.</text_error_attendant_name_format>
+        <text_error_message_title_format>O título da mensagem deve ter entre 3 e 24 caracteres.</text_error_message_title_format>
+        <text_error_message_type_format>Selecione uma opção de tipo de mensagem correta.</text_error_message_type_format>
+        <text_error_message_media_type_format>Selecione uma opção de tipo de mensagem de mídia correta.</text_error_message_media_type_format>
+        <text_error_message_media_url_format>Digite uma url do conteúdo da mensagem de mídia válida.</text_error_message_media_url_format>
+        <text_error_message_event_format>Selecione uma opção de evento de mensagem correta.</text_error_message_event_format>
+        <text_error_message_event_is_self_format>A mensagem não pode ser enviada para um atendente quando a conversa for iniciada/finalizada.</text_error_message_event_is_self_format>
+        <text_error_message_event_menu_format>A mensagem do tipo menu não pode ser enviada quando a conversa for iniciada pelo atendente ou finalizada.</text_error_message_event_menu_format>
+        <text_error_message_option_title_format>O título da opção da mensagem deve ter entre 3 e 24 caracteres.</text_error_message_option_title_format>
+        <text_error_message_option_description_format>A descrição da opção da mensagem deve ter entre 3 e 72 caracteres.</text_error_message_option_description_format>
+        <text_error_attendant_name_use_var>Não é possível utilizar variáveis de ambiente no nome do atendente.</text_error_attendant_name_use_var>
+        <text_error_message_title_use_var>Não é possível utilizar variáveis de ambiente no título da mensagem.</text_error_message_title_use_var>
+        <text_error_message_option_use_var>Não é possível utilizar variáveis de ambiente nas opções da mensagem.</text_error_message_option_use_var>
+        <text_error_keyword_use_var>Não é possível utilizar variáveis de ambiente nas palavras-chave.</text_error_keyword_use_var>
+        <text_error_message_content_size_format>A mensagem deve conter no máximo 2056 caracteres.</text_error_message_content_size_format>
+        <text_error_username_format>O nome de usuário deve ter entre 4 e 32 caracteres.</text_error_username_format>
+        <text_error_fullname_format>O nome completo deve ter entre 8 e 255 caracteres.</text_error_fullname_format>
+        <text_error_pass_format>A senha deve ter pelo menos 8 caracteres, contendo pelo menos 1 número, 1 letra maiúscula e 1 letra minúscula.</text_error_pass_format>
+        <text_error_confirm_format>As duas senhas não coincidem.</text_error_confirm_format>
+        <text_error_txt_file_format>O arquivo deve ser um arquivo de texto (extensão .txt).</text_error_txt_file_format>
+		<text_error_language_format>O idioma selecionado não existe.</text_error_language_format>
+        <text_error_theme_format>O tema selecionado não existe.</text_error_theme_format>
+        <text_error_conversation_duration_format>O tempo de conversa não é válido.</text_error_conversation_duration_format>
+        <text_error_api_domain_format>O domínio da API da Meta é obrigatório.</text_error_api_domain_format>
+        <text_error_api_version_format>A versão da API da Meta é obrigatório.</text_error_api_version_format>
+        <text_error_user_already_exists>Este nome de usuário já está em uso. Informe outro.</text_error_user_already_exists>
+		<text_error_phone_already_exists>Este número de telefone celular já está em uso. Informe outro.</text_error_phone_already_exists>
+		<text_error_attendant_already_exists>Este atendente já está cadastrado. Informe outro.</text_error_attendant_already_exists>
+		<text_error_init_message_already_exists>Ops, não é possível cadastrar mais de uma mensagem inicial.</text_error_init_message_already_exists>
+		<text_error_finish_in_init>Não é possível finalizar a conversa com a mensagem inicial.</text_error_finish_in_init>
+		<text_error_limitation_attendants>OPS, VOCÊ EXCEDEU O LIMITE MÁXIMO DE CADASTROS DE ATENDENTES! CONTATE O ADMINISTRADOR DO SISTEMA PARA MAIS INFORMAÇÕES.</text_error_limitation_attendants>
+		<text_error_limitation_messages>OPS, VOCÊ EXCEDEU O LIMITE MÁXIMO DE CADASTROS DE MENSAGENS! CONTATE O ADMINISTRADOR DO SISTEMA PARA MAIS INFORMAÇÕES.</text_error_limitation_messages>
+		<text_error_schedule_id>O agendamento não foi encontrado.</text_error_schedule_id>
+		<text_error_schedule_status>Ops, não é possível atualizar o status de agendamentos já finalizados ou cancelados.</text_error_schedule_status>
+        <text_error_access_access>VOCÊ NÃO TÊM PERMISSÃO PARA ACESSAR ESTA PÁGINA! CONTATE O ADMINISTRADOR DO SISTEMA PARA MAIS INFORMAÇÕES.</text_error_access_access>
+        <text_error_access_modify>VOCÊ NÃO TÊM PERMISSÃO PARA MODIFICAR ESTA PÁGINA! CONTATE O ADMINISTRADOR DO SISTEMA PARA MAIS INFORMAÇÕES.</text_error_access_modify>
+        <text_error_captcha>O captcha é obrigatório.</text_error_captcha>
+    </translations>
