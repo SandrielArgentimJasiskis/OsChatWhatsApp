@@ -6,7 +6,7 @@ Requisitos:
 PHP >= 7.4;
 Conta empresarial da Meta, chip verificado e configurado, mais informações em https://developers.facebook.com/docs/whatsapp/cloud-api/overview.
 
-Chatbot (Foram feitas diversas modificações no sistema do chatbot ao longo do tempo. Entre elas estão:
+Chatbot (Foram feitas diversas modificações no sistema do chatbot ao longo do tempo). Entre elas estão:
 
 (ABRIL, MAIO e JUNHO):
 Adicionado o campo do token do cron do sistema na tela de opções do sistema.
