@@ -1,0 +1,85 @@
+{{ header }}
+    <div class="container">
+        <form class="form" action="{{ action }}" method="post">
+            <h2 class="welcome">{{ title }}</h2>
+            
+            <input class="input-form" type="text" name="user" value="{{ user }}" placeholder="{{ text_placeholder_username }}" />
+            <input class="input-form" type="text" name="fullname" value="{{ fullname }}" placeholder="{{ text_placeholder_fullname }}" />
+            
+            <input class="input-form" type="text" name="app_id" value="{{ app_id }}" placeholder="{{ text_placeholder_app_id }}" onfocusout="changeNumbers()" />
+            <input class="input-form" type="text" name="whatsapp_business_account_id" value="{{ whatsapp_business_account_id }}" placeholder="{{ text_placeholder_whatsapp_business_account_id }}" onfocusout="changeNumbers()" />
+            
+            <select class="input-form" name="phone_id">
+                <option value="">{{ text_option_select_phone }}</option>
+                {% for phone_number in phone_numbers %}
+                    <option value="{{ phone_number.id }}"{% if phone_id == phone_number.id %}selected="selected"{% endif %}">{{ phone_number.display_phone_number }}</option>
+                {% endfor %}
+            </select>
+            
+            <input class="input-form" type="text" name="token" value="{{ token }}" placeholder="{{ text_placeholder_token }}" onfocusout="changeNumbers()" />
+            <input class="input-form" type="password" name="pass" value="" placeholder="{{ text_placeholder_pass }}" />
+			<input class="input-form" type="password" name="confirm" value="" placeholder="{{ text_placeholder_confirm }}" />
+			
+			<h3>{{ text_title_limitations }}</h3>
+			
+			<input class="input-form" type="text" name="limitations[attendants]" value="{{ limitations.attendants }}" placeholder="{{ text_placeholder_limit_attendants }}" />
+			<input class="input-form" type="text" name="limitations[messages]" value="{{ limitations.messages }}" placeholder="{{ text_placeholder_limit_messages }}" />
+            
+            <h3>{{ text_title_permission_access }}</h3>
+            
+            <div class="check-form">
+                {% for access_area in access_area %}
+                    <input type="checkbox" name="access[access][]" id="access_access_{{ access_area.area | replace ({'/':'_' }) }}" value="{{ access_area.area }}" {% if access_area.area in access.access %}checked="checked"{% endif %}><label for="access_access_{{ access_area.area | replace ({ '/':'_' }) }}">{{ access_area.area }}</label></input><br>
+                {% endfor %}
+            </div>
+            
+            <h3>{{ text_title_permission_modify }}</h3>
+            
+            <div class="check-form">
+                {% for access_area in access_area %}
+                    <input type="checkbox" name="access[modify][]" id="access_modify_{{ access_area.area | replace ({'/':'_' }) }}" value="{{ access_area.area }}" {% if access_area.area in access.modify %}checked="checked"{% endif %}><label for="access_modify_{{ access_area.area | replace({'/':'_'}) }}">{{ access_area.area }}</label></input><br>
+                {% endfor %}
+            </div>
+            
+            <input type="hidden" name="{{ token_name }}" value="{{ token_value }}" />
+            
+            {% if captcha %}
+			    {{ captcha }}
+			{% endif %}
+            
+            <input type="submit" class="button-form" name="submit" value="{{ send }}" />
+            
+            {% if error %}<p class="error">{{ error }}</p>{% endif %}
+        </form>
+        
+    </div>
+    
+<script type="text/javascript">
+    function changeNumbers() {
+        app_id = $("input[name=\"app_id\"]").val();
+        whatsapp_business_account_id = $("input[name=\"whatsapp_business_account_id\"]").val();
+        token = $("input[name=\"token\"]").val();
+        console.log(app_id);
+        console.log(whatsapp_business_account_id);
+        console.log(token);
+        
+        if ((app_id.length >= 14) && (whatsapp_business_account_id >= 14) && (token.length >= 180)) {
+            console.log("verificando conexão com a api.");
+            
+            $.ajax({
+                url: "{{ url }}",
+                type: "post",
+                data: "app_id=" + app_id + "&whatsapp_business_account_id=" + whatsapp_business_account_id + "&token=" + token,
+                dataType: "html",
+                beforeSend: function(json) {
+                    console.log(json);
+                }, success: function(json) {
+                    $("select[name=\"phone_id\"]").html(json);
+                }, error: function(xhr, ajaxOptions, thrownError) {
+                    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                }
+            });
+        }
+    }
+</script>
+{{ footer }}

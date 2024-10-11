@@ -1,0 +1,58 @@
+{{ header }}
+{% if msg %}<p class="msg">{{ msg }}</p>{% endif %}
+
+    <div class="container">
+        <form class="form" action="{{ action }}" method="post">
+            <h2 class="welcome">{{ text_title }}</h2>
+            
+            <select class="input-form" name="default_language_id" value="{{ default_language_id }}">
+				<option value="">{{ text_option_select_default_language }}</option>
+				{% for language in languages %}
+					<option value="{{ language.id }}" {% if default_language_id == language.id %}selected="selected"}{% endif %}>{{ language.language }}</option>
+				{% endfor %}
+			</select>
+			
+			<select class="input-form" name="default_theme_id">
+				<option value="">{{ text_option_select_default_theme }}</option>
+				{% for theme in themes %}
+					<option value="{{ theme.id }}" {% if default_theme_id == theme.id %}selected="selected"}{% endif %}>{{ theme.theme }}</option>
+				{% endfor %}
+			</select>
+			
+            <input class="input-form" type="text" name="conversation_duration" value="{{ conversation_duration }}" placeholder="{{ text_placeholder_conversation_duration }}" />
+            
+            <input class="input-form" type="text" name="api_domain" value="{{ api_domain }}" placeholder="{{ text_placeholder_api_domain }}" />
+            
+            <input class="input-form" type="text" name="api_version" value="{{ api_version }}" placeholder="{{ text_placeholder_api_version }}" />
+            
+            <input class="input-form" type="text" name="cron_token" value="{{ cron_token }}" placeholder="{{ text_placeholder_cron_token }}" />
+            
+            <input class="input-form" type="text" name="mail_host" value="{{ mail_host }}" placeholder="{{ text_placeholder_mail_host }}" />
+            
+            <input class="input-form" type="text" name="mail_username" value="{{ mail_username }}" placeholder="{{ text_placeholder_mail_username }}" />
+            
+            <input class="input-form" type="text" name="mail_password" value="{{ mail_password }}" placeholder="{{ text_placeholder_mail_password }}" />
+            
+            <input class="input-form" type="text" name="mail_port" value="{{ mail_port }}" placeholder="{{ text_placeholder_mail_port }}" />
+            
+            <select class="input-form" name="mail_encryption">
+				<option value="">{{ text_option_select_mail_encryption }}</option>
+				<option value="tls" {% if mail_encryption == 'tls' %}selected="selected"}{% endif %}>{{ text_option_select_mail_tls }}</option>
+				<option value="ssl" {% if mail_encryption == 'ssl' %}selected="selected"}{% endif %}>{{ text_option_select_mail_ssl }}</option>
+			</select>
+            
+            <input type="hidden" name="{{ token_name }}" value="{{ token_value }}" />
+			
+			{% if captcha %}
+			    {{ captcha }}
+			{% endif %}
+            
+            <input type="submit" class="button-form" name="submit" value="{{ text_button_submit }}" />
+            
+            {% if error %}<p class="error">{{ error }}</p>{% endif %}
+            
+            
+        </form>
+        
+    </div>
+{{ footer }}

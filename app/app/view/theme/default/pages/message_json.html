@@ -1,0 +1,5 @@
+<option value="">{{ text_option_select_message_option }}</option>
+
+{% for message_option in message.options %}
+    <option value="{{ message_option.id }}">{{ message_option.option_title }}</option>
+{% endfor %}

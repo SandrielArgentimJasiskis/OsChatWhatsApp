@@ -1,0 +1,31 @@
+<div class="container">
+    <table class="form table-form" style="margin-left:0px">
+        <thead>
+			<tr>
+				<th colspan="3">
+					<div class="TitleContainer">
+						<span>{{ title }}</span>
+					</div>
+				</th>
+			</tr>
+            <tr>
+                {% if most_option_messages %}
+                    <th>{{ text_subject }}</th>
+                    <th>{{ text_total }}</th>
+                {% else %}
+                    <th><center><h2 class="empty">{{ text_empty_data }}<h2></center></th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% if most_option_messages %}
+                {% for most_option_message in most_option_messages %}
+                <tr>
+                    <td>{{ most_option_message.subject }}</td>
+                    <td>{{ most_option_message.total }}</td>
+                </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>

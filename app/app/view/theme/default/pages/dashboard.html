@@ -1,0 +1,37 @@
+{{ header }}
+<script type="text/javascript" src="{{ path }}/scripts/jquery/flot/jquery.flot.js"></script>
+<script type="text/javascript" src="{{ path }}/scripts/jquery/flot/jquery.flot.resize.min.js"></script>
+<script type="text/javascript" src="{{ path }}/scripts/jquery/flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="{{ path }}/scripts/jquery/flot/jquery.flot.tooltip.min.js"></script>
+
+<div class="container">
+    <div class="filter" id="date-menu">
+        <a href="{{ link_yesterday }}" {% if range == 'yesterday' %}class="active"{% endif %}>{{ text_yesterday }}</a>
+        <a href="{{ link_day }}" {% if range == 'day' %}class="active"{% endif %}>{{ text_day }}</a>
+        <a href="{{ link_week }}" {% if range == 'week' %}class="active"{% endif %}>{{ text_week }}</a>
+        <a href="{{ link_month }}" {% if range == 'month' %}class="active"{% endif %}>{{ text_month }}</a>
+        <a href="{{ link_year }}"  {% if range == 'year' %}class="active"{% endif %}>{{ text_year }}</a>
+    </div>
+</div>
+
+{% for extension in extensions %}
+    {% for extension_view in extension %}
+        {{ extension_view }}
+    {% endfor %}
+{% endfor %}
+
+<style>
+    .message-report {
+        font-size: 24px;
+    }
+    .message-report-absolute {
+        display: block;
+        text-align: center;
+        font-size: 28px;
+    }
+	.container {
+		margin-top: 30px;
+	}
+</style>
+
+{{ footer }}

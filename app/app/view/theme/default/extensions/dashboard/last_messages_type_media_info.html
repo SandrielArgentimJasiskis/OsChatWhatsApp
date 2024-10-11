@@ -1,0 +1,35 @@
+<div class="container">
+    <table class="form table-form" style="margin-left:0px">
+        <thead>
+			<tr>
+				<th colspan="4">
+					<div class="TitleContainer">
+						<span>{{ title }}</span>
+					</div>
+				</th>
+			</tr>
+            <tr>
+                {% if last_medias %}
+                    <th>{{ text_customer }}</th>
+                    <th>{{ text_type }}</th>
+                    <th>{{ text_url }}</th>
+                    <th>{{ text_time }}</th>
+                {% else %}
+                    <th><center><h2 class="empty">{{ text_empty_data }}<h2></center></th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% if last_medias %}
+                {% for last_media in last_medias %}
+                <tr>
+                    <td>{{ last_media.number }}</td>
+                    <td>{{ last_media.type }}</td>
+                    <td><a href="{{ last_media.url }}" target="_blank" style="color: indigo !important;text-decoration: underline !important;word-wrap: break-word;word-break: break-all;">{{ last_media.url }}</a></td>
+                    <td>{{ last_media.date }}</td>
+                </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>

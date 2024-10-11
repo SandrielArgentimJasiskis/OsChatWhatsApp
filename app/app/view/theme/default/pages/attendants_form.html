@@ -1,0 +1,16 @@
+{{ header }}
+    <div class="container">
+        <form class="form" action="{{ action }}" method="post">
+            <h2 class="welcome">{{ title }}</h2>
+            
+            <input class="input-form" type="text" name="attendant_name" value="{{ attendant_name }}" placeholder="{{ text_placeholder_attendant_name }}" minlength="3" maxlength="64" required />
+            
+            <input class="input-form" type="text" name="attendant_number" value="{{ attendant_number }}" placeholder="{{ text_placeholder_attendant_phone_number }}" minlength="13" maxlength="15" required />
+            
+            <input type="submit" class="button-form" name="submit" value="{{ send }}" />
+            
+            {% if error %}<p class="error">{{ error }}</p>{% endif %}
+        </form>
+        
+    </div>
+{{ footer }}

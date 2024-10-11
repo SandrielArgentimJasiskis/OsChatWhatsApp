@@ -1,0 +1,35 @@
+{{ header }}
+{% if msg %}<p class="msg">{{ msg }}</p>{% endif %}
+
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<a class="button-add" href="{{ add }}">{{ text_button_add }}</a>
+
+{% if messages %}
+    <table class="form table-form">
+        <thead>
+            <tr>
+                <th>{{ text_th_message }}</th>
+                <th>{{ text_th_type }}</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for message in messages %}
+            <tr>
+                <td>{{ message.message_title }}</td>
+                <td>{{ message.type }}</td>
+                <td><a href="{{ message.edit }}"><i class="fa fa-edit"></i></a></td>
+                <td><a onclick="popupDelete('{{ message.question_delete }}', '{{ message.delete }}');" style="cursor: pointer"><i class="fa fa-trash"></i></a>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <center><h2 class="empty">{{ text_empty }}</h2></center>
+{% endif %}
+
+<form action="{{ url }}" method="post" content="message_id"></form>
+
+{{ footer }}

@@ -1,0 +1,57 @@
+<div class="container chart_problem_solving">
+	<div class="card-body form">
+		<div class="TitleContainer">
+			<span>{{ title }}</span>
+		</div>
+	<div id="chart_problem_solving" style="width: 100%; height: 260px;"></div>
+	</div>
+	
+<script>
+    var data_problem_solving = [
+    {
+      label: "{{ text_bot }}",
+      data: {{ totals.bot }},
+      color: "{{ bot_color }}"
+    },
+    {
+      label: "{{ text_attendant }}",
+      data: {{ totals.attendant }},
+      color: "{{ attendant_color }}"
+    }
+  ];
+
+  var options_problem_solving = {
+    series: {
+      pie: {
+        show: true,
+        innerRadius: 0.5,
+        label: {
+            show: true,
+            radius: 2/3
+        }
+      }
+    },
+    legend: {
+      show: true
+    }
+  };
+
+  $.plot("#chart_problem_solving", data_problem_solving, options_problem_solving);
+    
+    
+</script>
+
+<style>
+    .chart_problem_solving #flotTip {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .pieLabel {
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+    .pieLabel div {
+        color: #fff !important;
+        font-size: 14px !important;
+    }
+</style>
+</div>
