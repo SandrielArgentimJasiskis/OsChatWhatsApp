@@ -1,0 +1,57 @@
+<div class="container chart_message_report_status">
+	<div class="card-body form">
+		<div class="TitleContainer">
+			<span>{{ title }}</span>
+		</div>
+	<div id="chart" style="width: 100%; height: 260px;"></div>
+	</div>
+	
+<script>
+    var data = [
+    {
+      label: "{{ text_message_read }}",
+      data: {{ message_status_read.total }},
+      color: "{{ message_read_color }}"
+    },
+    {
+      label: "{{ text_message_sent }}",
+      data: {{ message_status_sent.total }},
+      color: "{{ message_sent_color }}"
+    }
+  ];
+
+  var options = {
+    series: {
+      pie: {
+        show: true,
+        innerRadius: 0.5,
+        label: {
+            show: true,
+            radius: 2/3
+        }
+      }
+    },
+    legend: {
+      show: true
+    }
+  };
+
+  $.plot("#chart", data, options);
+    
+    
+</script>
+
+<style>
+    .chart_message_report_status #flotTip {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .pieLabel {
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+    .pieLabel div {
+        color: #fff !important;
+        font-size: 14px !important;
+    }
+</style>
+</div>

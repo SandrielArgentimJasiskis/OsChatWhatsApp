@@ -1,0 +1,22 @@
+{{ header }}
+    <div class="container">
+        <form class="form" action="{{ action }}" method="post">
+            {% if msg %}
+                <h2 class="welcome">{{ msg }}</h2>
+            {% else %}
+                <h2 class="welcome">{{ text_title }}</h2>
+    			
+                <input class="input-form" type="text" name="email" value="{{ email }}" placeholder="{{ text_placeholder_email }}" required />
+                
+                <input type="hidden" name="{{ token_name }}" value="{{ token_value }}" />
+    			
+                <input type="submit" class="button-form" name="submit" value="{{ text_submit }}" />
+                <a href="{{ back }}">{{ text_back }}</a>
+                
+                {% if error %}<p class="error">{{ error }}</p>{% endif %}
+                
+            {% endif %}
+        </form>
+        
+    </div>
+{{ footer }}

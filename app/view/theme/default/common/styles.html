@@ -1,0 +1,57 @@
+<style type="text/css">
+    {% for style in styles %}
+        {% if style.config == 'bg_color' %}
+            body { background-color: {{ style.value }} };
+        {% endif %}
+        
+        {% if style.config == 'buttons_bg_color' %}
+            .button-add, .button-form { background-color: {{ style.value }} };
+        {% endif %}
+        
+        {% if style.config == 'buttons_disabled_bg_color' %}
+            .button-form-disabled { background-color: {{ style.value }} };
+        {% endif %}
+        
+        {% if style.config == 'extensions_title_bg_color' %}
+            .TitleContainer { background-color: {{ style.value }} };
+        {% endif %}
+        
+        {% if style.config == 'extensions_title_color' %}
+            .TitleContainer span { color: {{ style.value }} };
+        {% endif %}
+        
+        {% if style.config == 'extensions_title_align' %}
+            {% if style.value == '1' %}
+                {% set align = 'left' %}
+            {% elseif style.value == '2' %}
+                {% set align = 'center' %}
+            {% else %}
+                {% set align = 'right' %}
+            {% endif %}
+        
+            .TitleContainer { text-align: {{ align }} };
+        {% endif %}
+        
+        {% if style.config == 'extensions_title_weight' %}
+            {% if style.value == '1' %}
+                {% set weight = '100' %}
+            {% else %}
+                {% set weight = '900' %}
+            {% endif %}
+        
+            .TitleContainer { font-weight: {{ weight }} };
+        {% endif %}
+        
+        {% if style.config == 'theme_font_id' %}
+            {% for font in fonts %}
+                {% if font.id == style.value %}
+                    {% if font.import %}
+                        {{ font.import }}
+                    {% endif %}
+                    
+                    h1, h2, h3, h4, h5, h6, th, td, p, a, strong, span { font-family: {{ font.family }} !important; }
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</style>

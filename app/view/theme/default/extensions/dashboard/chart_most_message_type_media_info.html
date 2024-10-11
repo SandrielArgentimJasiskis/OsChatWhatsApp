@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="card-body form">
+        <div class="TitleContainer">
+			<span>{{ title }}</span>
+		</div>
+        <div id="chart-most-message-type-media" style="width: 100%; height: 260px;"></div>
+    </div>
+</div>
+
+<script>
+    {% set total = 4 %}
+
+    var yaxis = [
+        [0, "{{ text_message_type_media_document }}"],
+        [1, "{{ text_message_type_media_audio }}"],
+        [2, "{{ text_message_type_media_video }}"],
+        [3, "{{ text_message_type_media_image }}"]
+    ];
+    
+    var option = {
+        shadowSize: 0,
+        colors: ["{{ data_color }}"],
+        bars: {
+            show: true,
+            fill: {% if fill %}true{% else %}false{% endif %},
+            lineWidth: 1,
+            horizontal: true
+        },
+        grid: {
+            backgroundColor: "{{ bgcolor }}",
+            hoverable: true
+        },
+        points: {
+            show: false
+        },
+        yaxis: {
+            show: true,
+            ticks: yaxis
+        },
+        tooltip: true,
+        tooltipOpts: {
+          content: "%x"
+        }
+    }
+    
+    data_attendant = [];
+    data_attendant["data"] = [
+        [{{ totals.document }}, 0],
+        [{{ totals.audio }}, 1],
+        [{{ totals.video }}, 2],
+        [{{ totals.image }}, 3]
+    ];
+    
+    $.plot("#chart-most-message-type-media", [data_attendant], option);
+
+    $("#chart-most-message-type-media").bind("plothover", function (event, pos, item) {
+        $(".tooltip").remove();
+
+        if (item) {
+            $("<div id=\"tooltip\" class=\"tooltip top show\"><div class=\"tooltip-arrow\"></div><div class=\"tooltip-inner\">" + item.datapoint[1].toFixed(2) + "</div></div>").prependTo("body");
+
+            $("#tooltip").css({
+                "position": "absolute",
+                "visibility": "hidden"
+            }).fadeIn("slow");
+
+            $("#chart-most-message-type-media").css("cursor", "pointer");
+        } else {
+            $("#chart-most-message-type-media").css("cursor", "auto");
+        }
+    });
+</script>

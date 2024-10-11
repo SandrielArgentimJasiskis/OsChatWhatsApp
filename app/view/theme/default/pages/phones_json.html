@@ -1,0 +1,6 @@
+<option value="">{{ text_option_select_phone }}</option>
+{% if phone_numbers %}
+    {% for phone_number in phone_numbers %}
+        <option value="{{ phone_number.id }}">{{ phone_number.display_phone_number }}</option>
+    {% endfor %}
+{% endif %}

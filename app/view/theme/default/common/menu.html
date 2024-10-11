@@ -1,0 +1,14 @@
+{% if logged %}
+    <ul class="mainMenu">
+        <li><a href="{{ dashboard }}">{{ text_dashboard }}</a></li>
+        <li><a href="{{ messages }}">{{ text_messages }}</a></li>
+		<li><a href="{{ attendants }}">{{ text_attendants }}</a></li>
+        <li><a href="{{ users }}">{{ text_users }}</a></li>
+        <li><a href="{{ reports }}">{{ text_reports }}</a></li>
+        <li><a href="{{ extensions }}">{{ text_extensions }}</a></li>
+        <li><a href="{{ schedules }}">{{ text_schedules }}</a></li>
+        <li><a href="{{ settings }}">{{ text_settings }}</a></li>
+		<li><a href="{{ system }}">{{ text_system }}</a></li>
+        <li><a href="{{ logout }}">{{ text_logout }}</a></li>
+    </ul>
+{% endif %}

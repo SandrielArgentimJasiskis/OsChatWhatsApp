@@ -1,0 +1,54 @@
+{{ header }}
+
+<div class="container">
+    <div class="filter" id="extension-menu">
+        <a href="{{ link_captcha }}" {% if type == 'captcha' %}class="active"{% endif %}>{{ text_type_captcha }}</a>
+        <a href="{{ link_dashboard }}" {% if type == 'dashboard' %}class="active"{% endif %}>{{ text_type_dashboard }}</a>
+        <a href="{{ link_installers }}" {% if type == 'installers' %}class="active"{% endif %}>{{ text_type_installers }}</a>
+        <a href="{{ link_integrations }}" {% if type == 'integrations' %}class="active"{% endif %}>{{ text_type_integrations }}</a>
+        <a href="{{ link_login }}" {% if type == 'login' %}class="active"{% endif %}>{{ text_type_login }}</a>
+        <a href="{{ link_reports }}" {% if type == 'reports' %}class="active"{% endif %}>{{ text_type_reports }}</a>
+        <a href="{{ link_cron }}" {% if type == 'cron' %}class="active"{% endif %}>{{ text_type_cron }}</a>
+        <a href="{{ link_themes }}" {% if type == 'themes' %}class="active"{% endif %}>{{ text_type_themes }}</a>
+    </div>
+</div>
+
+<div class="container extensions-table">
+    <table class="form table-form" style="margin-left: 0px;">
+        <thead>
+            <tr>
+                {% if extensions %}
+                    <th>{{ text_th_extension }}</th>
+                    <th></th>
+                {% else %}
+                    <th><center><h2 class="empty">{{ text_empty_list }}<h2></center></th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% if extensions %}
+                {% for extension in extensions %}
+                    <tr>
+                        <td>{{ extension.title }}</td>
+                        <td><a onclick="getExtensionForm('{{ extension.edit }}');">{% if extension.status %}<i class="fa fa-edit"></i>{% else %}<i class="fa fa-plus"></i>{% endif %}</a></td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+<dialog id="dialog"></dialog>
+
+<style>
+    .message-report {
+        font-size: 24px;
+    }
+    .message-report-absolute {
+        display: block;
+        text-align: center;
+        font-size: 28px;
+    }
+</style>
+
+{{ footer }}

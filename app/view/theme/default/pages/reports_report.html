@@ -1,0 +1,11 @@
+{{ header }}
+
+{% if msg %}<p class="msg">{{ msg }}</p>{% endif %}
+
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<a class="button-add" href="{{ export }}">{{ text_button_export }}</a>
+
+{{ data }}
+
+{{ footer }}

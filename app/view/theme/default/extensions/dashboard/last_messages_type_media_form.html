@@ -1,0 +1,13 @@
+<div class="extension-form">
+    <select class="input-form" name="status">
+        <option value="">{{ text_status }}</option>
+        <option value="0"{% if status == "0" %}selected="selected"{% endif %}>{{ text_disabled }}</option>
+        <option value="1"{% if status == "1" %}selected="selected"{% endif %}>{{ text_enabled }}</option>
+    </select>
+    
+    <input type="text" class="input-form" name="title" placeholder="{{ text_title_extension }}" value="{{ title }}" />
+            
+    <input type="text" class="input-form" name="limit" placeholder="{{ text_limit }}" value="{{ limit }}" />
+    
+    <input type="text" class="input-form" name="order" placeholder="{{ text_order_extension }}" value="{{ order }}" />
+</div>

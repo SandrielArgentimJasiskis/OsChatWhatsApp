@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="card-body form">
+        <div class="TitleContainer">
+			<span>{{ title }}</span>
+		</div>
+        <div id="chart-most-message-type" style="width: 100%; height: 260px;"></div>
+    </div>
+</div>
+
+<script>
+    {% set total = 4 %}
+
+    var yaxis = [
+        [0, "{{ text_message_type_media }}"],
+        [1, "{{ text_message_type_interactive }}"],
+        [2, "{{ text_message_type_text }}"]
+    ];
+    
+    var option = {
+        shadowSize: 0,
+        colors: ["{{ data_color }}"],
+        bars: {
+            show: true,
+            fill: {% if fill %}true{% else %}false{% endif %},
+            lineWidth: 1,
+            horizontal: true
+        },
+        grid: {
+            backgroundColor: "{{ bgcolor }}",
+            hoverable: true
+        },
+        points: {
+            show: false
+        },
+        yaxis: {
+            show: true,
+            ticks: yaxis
+        },
+        tooltip: true,
+        tooltipOpts: {
+          content: "%x"
+        }
+    }
+    
+    data_attendant = [];
+    data_attendant["data"] = [
+        [{{ totals.media }}, 0],
+        [{{ totals.interactive }}, 1],
+        [{{ totals.text }}, 2]
+    ];
+    
+    $.plot("#chart-most-message-type", [data_attendant], option);
+
+    $("#chart-most-message-type").bind("plothover", function (event, pos, item) {
+        $(".tooltip").remove();
+
+        if (item) {
+            $("<div id=\"tooltip\" class=\"tooltip top show\"><div class=\"tooltip-arrow\"></div><div class=\"tooltip-inner\">" + item.datapoint[1].toFixed(2) + "</div></div>").prependTo("body");
+
+            $("#tooltip").css({
+                "position": "absolute",
+                "visibility": "hidden"
+            }).fadeIn("slow");
+
+            $("#chart-most-message-type").css("cursor", "pointer");
+        } else {
+            $("#chart-most-message-type").css("cursor", "auto");
+        }
+    });
+</script>

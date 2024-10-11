@@ -1,0 +1,35 @@
+{{ header }}
+{% if msg %}<p class="msg">{{ msg }}</p>{% endif %}
+
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<a class="button-add" href="{{ add }}">{{ text_button_add }}</a>
+
+{% if attendants %}
+    <table class="form table-form">
+        <thead>
+            <tr>
+                <th>{{ text_th_attendant }}</th>
+                <th>{{ text_th_phone }}</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for attendant in attendants %}
+            <tr>
+                <td>{{ attendant.attendant_name }}</td>
+                <td>{{ attendant.attendant_number }}</td>
+                <td><a href="{{ attendant.edit }}"><i class="fa fa-edit"></i></a></td>
+                <td><a onclick="popupDelete('{{ attendant.question_delete }}', '{{ attendant.delete }}');" style="cursor: pointer"><i class="fa fa-trash"></i></a>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <center><h2 class="empty">{{ text_empty }}</h2></center>
+{% endif %}
+
+<form action="{{ url }}" method="post" content="attendant_id"></form>
+
+{{ footer }}

@@ -1,0 +1,71 @@
+<div class="container chart_messages">
+    <div class="card-body form">
+        <div class="TitleContainer">
+			<span>{{ title }}</span>
+		</div>
+        <div id="chart-sale" style="width: 100%; height: 260px;"></div>
+    </div>
+</div>
+
+<script>
+    {% if range != 'week' %}
+    var xaxis = [{% for xaxis in xaxis %}[{{ xaxis.0-1 }}, {{ xaxis.1 }}],{% endfor %}]
+    {% else %}
+    var xaxis = [[0, "{{ text_monday }}"], [1, "{{ text_tuesday }}"], [2, "{{ text_wednesday }}"], [3, "{{ text_thursday }}"], [4, "{{ text_friday }}"], [5, "{{ text_saturday }}"], [6, "{{ text_sunday }}"]]
+    {% endif %}
+
+    var option = {
+        shadowSize: 0,
+        /*colors: ["#9FD5F1", "#1065D2", "#1E90FF"],*/
+        colors: ["{{ message_sent_color }}", "{{ message_read_color }}", "#1E90FF"],
+        bars: {
+            show: true,
+            fill: {% if fill %}true{% else %}false{% endif %},
+            lineWidth: 1
+        },
+        grid: {
+            backgroundColor: "{{ message_bgcolor }}",
+            hoverable: true
+        },
+        points: {
+            show: false
+        },
+        xaxis: {
+            show: true,
+            ticks: xaxis
+        },
+        tooltip: true,
+        tooltipOpts: {
+          content: "%y"
+        }
+    }
+
+    data_sent = [];
+    data_sent["label"] = "{{ text_message_sent }}";
+    data_sent["data"] = [{% for message_status in message_status_sent.data %}[{{ message_status.0 }}, {{ message_status.1 }}],{% endfor %}];
+    
+    data_read = [];
+    data_read["label"] = "{{ text_message_read }}";
+    data_read["data"] = [{% for message_status in message_status_read.data %}[{{ message_status.0 }}, {{ message_status.1 }}],{% endfor %}];
+    
+    $.plot("#chart-sale", [data_sent, data_read], option);
+
+    $("#chart-sale").bind("plothover", function (event, pos, item) {
+        $(".tooltip").remove();
+
+        if (item) {
+            $("<div id=\"tooltip\" class=\"tooltip top show\"><div class=\"tooltip-arrow\"></div><div class=\"tooltip-inner\">" + item.datapoint[1].toFixed(2) + "</div></div>").prependTo("body");
+
+            $("#tooltip").css({
+                "position": "absolute",
+                "visibility": "hidden"
+            }).fadeIn("slow");
+
+            $("#chart-sale").css("cursor", "pointer");
+        } else {
+            $("#chart-sale").css("cursor", "auto");
+        }
+    });
+    
+    $("#flotTip").css("left", "-90px");
+</script>

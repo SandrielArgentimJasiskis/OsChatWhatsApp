@@ -1,0 +1,25 @@
+{{ header }}
+    <div class="container">
+        <form class="form" action="{{ action }}" method="post">
+            <h2 class="welcome">{{ text_welcome }}</h2>
+			
+            <input class="input-form" type="text" name="user" value="{{ user }}" placeholder="{{ text_username }}" required />
+            <input class="input-form" type="password" name="pass" value="" placeholder="{{ text_password }}" required />
+            
+            <input type="hidden" name="{{ token_name }}" value="{{ token_value }}" />
+			
+			{% if captcha %}
+			    {{ captcha }}
+			{% endif %}
+			
+            <input type="submit" class="button-form" name="submit" value="{{ text_submit }}" />
+            
+            <a href="{{ forgotten }}">{{ text_forgotten }}</a>
+            
+            {% if error %}<p class="error">{{ error }}</p>{% endif %}
+            
+            {% if msg %}<p class="msg">{{ msg }}</p>{% endif %}
+        </form>
+        
+    </div>
+{{ footer }}
